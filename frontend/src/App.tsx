@@ -1,7 +1,7 @@
+import ConfiguracoesEmpresa from "./pages/ConfiguracoesEmpresa";
+
 function App() {
-  return (
-    <h1>OrcaPro SaaS</h1>
-  );
+  return <ConfiguracoesEmpresa />;
 }
 
 export default App;
