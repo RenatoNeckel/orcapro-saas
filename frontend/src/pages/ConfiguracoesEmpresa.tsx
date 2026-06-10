@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../App.css";
 
 function ConfiguracoesEmpresa() {
   const [nomeEmpresa, setNomeEmpresa] = useState("");
@@ -20,13 +21,13 @@ function ConfiguracoesEmpresa() {
   }
 
   return (
-    <div style={{ maxWidth: "700px", margin: "40px auto", padding: "20px" }}>
+    <div className="container">
       <h1>Configurações da Empresa</h1>
 
       <p>Preencha os dados que aparecerão nos orçamentos.</p>
 
       <form onSubmit={handleSubmit}>
-        <div>
+       <div className="form-group">
           <label>Nome da empresa</label>
           <br />
           <input
@@ -38,7 +39,7 @@ function ConfiguracoesEmpresa() {
 
         <br />
 
-        <div>
+        <div className="form-group">
           <label>CNPJ</label>
           <br />
           <input
@@ -50,7 +51,7 @@ function ConfiguracoesEmpresa() {
 
         <br />
 
-        <div>
+        <div className="form-group">
           <label>Telefone</label>
           <br />
           <input
@@ -62,7 +63,7 @@ function ConfiguracoesEmpresa() {
 
         <br />
 
-        <div>
+        <div className="form-group">
           <label>E-mail</label>
           <br />
           <input
@@ -74,7 +75,7 @@ function ConfiguracoesEmpresa() {
 
         <br />
 
-        <div>
+        <div className="form-group">
           <label>Endereço</label>
           <br />
           <textarea
